@@ -2,7 +2,66 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "dm-sans": ["DM Sans", "system-ui", "sans-serif"],
+        poppins: ["Poppins", "system-ui", "sans-serif"],
+      },
+      fontSize: {
+        "title-lg": ["1.75rem", { lineHeight: "1.2", fontWeight: "700" }],
+        "title-md": ["1.5rem", { lineHeight: "1.2", fontWeight: "700" }],
+        "title-sm": ["1.125rem", { lineHeight: "1.2", fontWeight: "700" }],
+
+        subtitle: ["1rem", { lineHeight: "1.2", fontWeight: "600" }],
+
+        "body-md": ["1rem", { lineHeight: "1.2", fontWeight: "400" }],
+        "body-sm": ["0.875rem", { lineHeight: "1.2", fontWeight: "400" }],
+        "body-xs": ["0.75rem", { lineHeight: "1.2", fontWeight: "400" }],
+
+        "label-md": [
+          "0.75rem",
+          {
+            lineHeight: "1.2",
+            fontWeight: "500",
+            textTransform: "uppercase",
+          },
+        ],
+        "label-sm": [
+          "0.625rem",
+          {
+            lineHeight: "1.2",
+            fontWeight: "500",
+            textTransform: "uppercase",
+          },
+        ],
+
+        "action-md": ["1rem", { lineHeight: "1.2", fontWeight: "500" }],
+        "action-sm": ["0.875rem", { lineHeight: "1.2", fontWeight: "500" }],
+      },
+      colors: {
+        orange: {
+          base: "#F24D0D",
+          dark: "#C43C08",
+        },
+        blue: {
+          light: "#D7EFF9",
+          base: "#5EC5FD",
+          dark: "#009CF0",
+        },
+        white: "#FFFFFF",
+        background: "#FBF4F4",
+        shape: "#F5EAEA",
+        gray: {
+          100: "#ADADAD",
+          200: "#949494",
+          300: "#666666",
+          400: "#3D3D3D",
+          500: "#1D1D1D",
+        },
+        danger: "#DC3545",
+        success: "#28A745",
+      },
+    },
   },
   plugins: [],
 };
