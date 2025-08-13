@@ -31,6 +31,9 @@ export default {
     "hover:bg-orange-dark",
     "hover:text-orange-dark",
     "hover:border-orange-dark",
+    "bg-shape-shape",
+    "text-gray-300",
+    "hover:text-orange-base",
   ],
   theme: {
     extend: {
