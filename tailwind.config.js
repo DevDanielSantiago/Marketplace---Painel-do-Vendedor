@@ -1,6 +1,37 @@
+import { colors } from "./src/styles/colors";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  safelist: [
+    "bg-orange-base",
+    "bg-orange-dark",
+    "text-orange-base",
+    "text-orange-dark",
+    "border-orange-base",
+    "border-orange-dark",
+    "text-white",
+
+    "text-action-md",
+    "text-action-sm",
+    "text-title-lg",
+    "text-title-md",
+    "text-title-sm",
+    "text-subtitle",
+    "text-body-md",
+    "text-body-sm",
+    "text-body-xs",
+    "text-label-md",
+    "text-label-sm",
+
+    "font-dm-sans",
+    "font-poppins",
+
+    "focus:ring-orange-base",
+    "hover:bg-orange-dark",
+    "hover:text-orange-dark",
+    "hover:border-orange-dark",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -38,29 +69,7 @@ export default {
         "action-md": ["1rem", { lineHeight: "1.2", fontWeight: "500" }],
         "action-sm": ["0.875rem", { lineHeight: "1.2", fontWeight: "500" }],
       },
-      colors: {
-        orange: {
-          base: "#F24D0D",
-          dark: "#C43C08",
-        },
-        blue: {
-          light: "#D7EFF9",
-          base: "#5EC5FD",
-          dark: "#009CF0",
-        },
-        white: "#FFFFFF",
-        background: "#FBF4F4",
-        shape: "#F5EAEA",
-        gray: {
-          100: "#ADADAD",
-          200: "#949494",
-          300: "#666666",
-          400: "#3D3D3D",
-          500: "#1D1D1D",
-        },
-        danger: "#DC3545",
-        success: "#28A745",
-      },
+      colors: colors,
     },
   },
   plugins: [],
