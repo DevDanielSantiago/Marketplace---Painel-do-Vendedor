@@ -43,6 +43,20 @@ export default {
     "animate-in",
     "fade-in-0",
     "zoom-in-95",
+    "max-w-[322px]",
+    "rounded-[20px]",
+
+    "hover:outline",
+    "hover:outline-2",
+    "hover:outline-blue-base",
+
+    "bg-blue-dark",
+    "bg-gray-400",
+    "text-white",
+    "text-[18px]",
+    "leading-[120%]",
+    "line-clamp-2",
+    "flex-shrink-0",
   ],
   theme: {
     extend: {
@@ -84,5 +98,5 @@ export default {
       colors: colors,
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };
