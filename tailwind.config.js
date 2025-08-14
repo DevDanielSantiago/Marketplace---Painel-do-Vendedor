@@ -34,6 +34,15 @@ export default {
     "bg-shape-shape",
     "text-gray-300",
     "hover:text-orange-base",
+
+    "bg-shape-white",
+    "border-shape-shape",
+    "hover:border-orange-base",
+    "focus:ring-orange-base",
+    "text-body-sm",
+    "animate-in",
+    "fade-in-0",
+    "zoom-in-95",
   ],
   theme: {
     extend: {
