@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { RotateCcw } from "lucide-react";
 import { cn } from "../../utils/cn";
+import { Icon } from "./Icon";
 
 interface UserProps {
   name: string;
@@ -91,7 +91,7 @@ export function User({
             )}
           >
             <span>Sair</span>
-            <RotateCcw size={16} />
+            <Icon name="logout" size={16} />
           </button>
         </div>
       )}
