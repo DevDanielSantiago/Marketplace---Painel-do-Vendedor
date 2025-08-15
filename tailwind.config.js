@@ -57,6 +57,20 @@ export default {
     "leading-[120%]",
     "line-clamp-2",
     "flex-shrink-0",
+
+    "w-[120px]",
+    "h-[120px]",
+    "w-[415px]",
+    "h-[340px]",
+    "rounded-[12px]",
+    "rounded-[20px]",
+    "bg-shape-shape",
+    "bg-black/60",
+    "hover:bg-gray-100",
+    "text-gray-300",
+    "text-white",
+    "mb-4",
+    "px-4",
   ],
   theme: {
     extend: {
